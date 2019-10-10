@@ -19,20 +19,47 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="/assets/icon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
     </head>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body, html {
             margin: 0;
             padding: 0;
+            font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+            height: 100%;
         }
 
         body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .logo {
+            width: 300px;
+            height: 72px;
             background-image: url('/assets/logo/togglify-logo.svg');
             background-repeat: no-repeat;
-            background-size: 350px;
+            background-size: cover;
             background-position: center;
         }
+
+        .slogan {
+            font-size: 16px;
+            font-weight: 300;
+            width: 300px;
+            text-align: right;
+            padding-right: 10px;
+        }
     </style>
-    <body></body>
+    <body>
+        <div class="logo"></div>
+        <h2 class="slogan">A simple click is enough</h2>
+    </body>
 </html>
